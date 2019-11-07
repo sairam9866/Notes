@@ -1,1 +1,26 @@
 Cucumber :
+
+Cucumber supports BDD(Behaviour Driven Development).
+Uses Language called Gherkin Plain English language
+
+Cucumber reads code written in plain english texy in feature files
+It finds exact macth of each step in stepDefinition
+
+Gherkin Keywords -- Feature,Scenario,Given,When,Then,And,But,BackGround,ScenarioOutline
+
+Example : Feature: Account Holder withdraws cash
+
+  Scenario: Account has sufficient funds
+   Given the account balance is $100
+     And the card is valid
+     And the machine contains enough money  
+    When the Account Holder requests $20
+    Then the ATM should dispense $20
+     And the account balance should be $80
+     And the card should be returned
+
+
+Feature is a Functionality of the project.
+Feature File is that in which cucumber tests are written.
+it is advisable there should be separate feature file for each feature under test.
+  Scenario is one of the core gherkin structure
