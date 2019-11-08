@@ -24,4 +24,17 @@ Feature is a Functionality of the project.
 Feature File is that in which cucumber tests are written.
 it is advisable there should be separate feature file for each feature under test.
   Scenario is one of the core gherkin structure
+Every sceanrio starst with scenario keyword and followed by optional scenario title.
+scenario outline is similar to scenario structuure providing multiple inputs 
  
+Given - it describes the pre-requisite for test to be excuted
+        ex- given i am a facebook user
+When -  it defines trigger point for any test scenario execution
+        ex- when i enter username
+then- then holds the expected results for test to be excuted
+        ex-THEN login should be sucessfull
+AND - provides logical and condition betweeen two conditions like when given then 
+        ex- when i enter user name and i enter password
+BUT- it signifies logical OR condition between any two statements or can be used with given when then
+      ex-THEN login should be successful. BUT home page should not be missing.
+scneario outline basically replaces variables/keywords with the value from table
