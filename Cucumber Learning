@@ -38,3 +38,10 @@ AND - provides logical and condition betweeen two conditions like when given the
 BUT- it signifies logical OR condition between any two statements or can be used with given when then
       ex-THEN login should be successful. BUT home page should not be missing.
 scneario outline basically replaces variables/keywords with the value from table
+  Cucumber Options tag is used to provide a link between the feature files and step definition files. Each step of the feature file is mapped to a corresponding method on the step definition file
+Test runner class is used to provide link between feature file and step definition file.
+Test Runner class is empty class with no class definition.
+Starting point of execution is testRunner class.
+
+No code should written in test runner class it should include the tags @RunWith and @Cucumber Options.
+The maximum number of steps is 3 to 4 in scenario. 
