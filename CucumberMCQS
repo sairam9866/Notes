@@ -1,0 +1,27 @@
+______________is the actual code implementation of the feature mentioned in feature file   -----> Step Definition
+Which is not a Cucumber Report  options -->progress/json/html/Rerun/Noneoftheabove         -----> NoneOfTheAbove
+What does cucumber Do -----> Cucumber Tests Other Software.
+____________is a process of developing software based on behavioural specification of software units  -----> BDD
+Check if all the steps have the step definition before execute     ----->  DryRun
+What are the advantages of Cucumber?        -----> All Of The Above
+A)Cucumber acceptance tests are written from user’s perspective B) Team Collaboration (Product owners, business analysts, developers, testers are all involved in writing scenarios)  C)Tests are written in plain-text English so people with less technical skills can also write scenarios  D)All of the above
+Which one of these Formatter Plugins Cucumber doesn't use to provide output?     -----> WWW
+What does Gherkin do?     ----->  Translates computer codes for people to understand them
+Not a Behavior-Driven Development tools     -----> Concordation
+What are the files required to execute a Cucumber test scenario?   -----> Both StepDefinition And FeatureFile
+What are the advanced framework design that can be used with Cucumber? --> log4j/extendedreporting/pageobjectmodel/all    -----> All
+which language cucumber not supports        ----->  C
+What is Cucumber -----> A Tool
+who are the developers for cucumber software  --> MattWynne/Aslok Hessley/Joseph Wilk/Gregory Henautik/ All    -----> All
+Which sign is used in gherkin syntax -----> #
+In which programming language was cucumber originally written   -----> Ruby
+Whats the subdivision of gherkin feature  -----> Scenario
+Which file extensions does all gherkin files have -----> .Feature
+What software is neededto run Cucumber web Test -----> All of the above
+___________is a software development technique where automated tests are written before the code   -----> TDD
+same scenario can be used for multiple set of data using -----> scenario Outline
+what are the not benefits of cucumber     ----->  None of the above
+This person is most concerned with the scope of the application. This involves translating user stories into a series of features  -----> Product Owner
+What langugae does cucumber Use -----> Gherkin
+How many parts does a Gherkin feature have?     -----> Three
+
