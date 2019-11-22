@@ -1,0 +1,30 @@
+SELECT Extracts data from database  
+ALTERDATABASE Modify the database
+ALTERTABLE    Modify the table
+DROPTABLE     Delets a table
+CREATEINDEX   creates an search key
+DROPINDEX     delete and index
+
+
+DISTINCT   is used to get different value --- If in database we have duplicate values with same name then we need to access only single value then we use distinct
+Ex: SELECT DISTINCT Column FROM Tablename;
+    SELECT COUNT(DISTINCT column) FROM Tablename;  it will give count for distinct values.
+    SELECT Count(*) AS Distinct Columnname FROM (SELECT DISTINCT columnname FROM Tablename);
+
+SQL WHERE clause is used to filter records.
+Operatore that supports where clause ------>  =,<,>,<=,>=,!=(<>),Between,like,in
+
+AND,OR operators are used to filter records based on more than one record
+Where clause can be combined with AND,OR,NOt operators
+ AND CONDITION WIll display records if given and condition becomes true
+ OR CONDITION WILL display records if given or condition becomes true
+AND and OR is used with where condition to filter and display reocrds between two columns
+We can combine all AND,OR,NOT together to display results
+ORDER BY sorts the reocrd in ascending/descending order vy default it will sort in ascending order  KEYWORDS:ASC|DESC
+SELECT * FROM Customers
+ORDER BY Country DESC;
+SELECT * FROM Customers
+ORDER BY Country ASC, CustomerName DESC;
+
+
+
