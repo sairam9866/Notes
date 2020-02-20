@@ -1,0 +1,90 @@
+var settingsButton = element(by.xpath("//span[contains(text(),'Settings')]"));
+  var showToggleBarGrid = element(by.xpath("//div[@class='mat-slide-toggle-bar']"));
+  var gridHeightDropDown = element(by.xpath("//mat-select[@formcontrolname='gridHeight']//div[@class='mat-select-value']"));
+  var tenRowsPerPage = element.all(by.xpath("//span[@class='mat-option-text']")).get(0);
+  var fifteenRowsPerPage = element.all(by.xpath("//span[@class='mat-option-text']")).get(1);
+  var twentyRowsPerPage = element.all(by.xpath("//span[@class='mat-option-text']")).get(2);
+  var landingPageDropDown = element(by.xpath("//mat-select[@formcontrolname='landingPage']//div[@class='mat-select-value']"));
+  var currentRecordsGrid = element.all(by.xpath("//span[@class='mat-option-text']")).get(0);
+  var futureRecordsGrid = element.all(by.xpath("//span[@class='mat-option-text']")).get(1);
+  var historicalRecordsGrid = element.all(by.xpath("//span[@class='mat-option-text']")).get(2);
+  var userGuideGrid = element.all(by.xpath("//span[@class='mat-option-text']")).get(3);
+  var resetToDefault = element(by.xpath("//span[contains(text(),'Reset to Default')]"));
+  var closeButtonGrid = element(by.xpath("//span[contains(text(),'Close')]"));
+  var getLatestRecords = element(by.xpath("//a[contains(text(),'Get Latest Records')]"));
+  var gridUpdatedStrip= element(by.xpath("//div[@class='data-grid-update-loader-strip'] "));
+
+//
+this.isSettingsButtonAvailable = function(){
+   return settingsButton.isDisplayed();
+};
+
+this.isShowToggleBarGridAvailable = function(){
+   return showToggleBarGrid.isDisplayed();
+};
+this.isRestoreToDefaultAvailable = function(){
+   return resetToDefault.isDisplayed();
+};
+this.clickSettingsButton = function(){
+   settingsButton.click();
+};
+this.clickToggleBarGrid = function(){
+   showToggleBarGrid.click();
+};
+this.clickTenRecordsPerPage = function(){
+   gridHeightDropDown.click();
+   tenRowsPerPage.click();
+};
+this.clickFifteenRecordsperPage = function(){
+   gridHeightDropDown.click();
+   fifteenRowsPerPage.click();
+};
+this.clickTwentyRecordsPerPage = function(){
+   gridHeightDropDown.click();
+   twentyRowsPerPage.click();
+};
+this.clickCurrentRecordsLandingPage = function(){
+   landingPageDropDown.click();
+   currentRecordsGrid.click();
+};
+this.clickFutureRecordsLandingPage = function(){
+   landingPageDropDown.click();
+   futureRecordsGrid.click();
+};
+this.clickHistoricalRecordsLandingPage = function(){
+   landingPageDropDown.click();
+   historicalRecordsGrid.click();
+};
+this.clickUserGuideRecordsLandingPage = function(){
+   landingPageDropDown.click();
+   userGuideGrid.click();
+};
+this.isCloseButtonAvailable = function(){
+   return closeButton.isDisplayed();
+};
+this.clickRestoreToDefault = function(){
+   resetToDefault.click();
+};
+this.clickCloseButtonGrid = function(){
+   closeButtonGrid.click();
+};
+this.clickLatestRecords = function(){
+   getLatestRecords.click();
+};
+this.isgridUpdatedStripAvailable = function(){
+   return gridUpdatedStrip.isAvailable();
+};
+
+
+
+
+
+it("Verify user clicks settings button and enable grid properties",function(){
+
+         
+        HomePagePOFile.clickSettingsButton();
+        browser.sleep(3000);
+        HomePagePOFile.clickToggleBarGrid();
+        browser.sleep(3000);
+        HomePagePOFile.clickCloseButtonGrid();
+    });

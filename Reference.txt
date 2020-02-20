@@ -1,0 +1,2 @@
+https://study.com/academy/lesson/what-is-instantiation-in-java-definition-example.html      --  Instance 
+https://stackoverflow.com/questions/1727603/places-where-javabeans-are-used         ----- JavaBeanClass

@@ -1,0 +1,165 @@
+CI:
+https://jenkins.io/download/thank-you-downloading-windows-installer-stable      //Download link for jenkins
+After installation configure jenkins
+https://localhost:8080
+first unlockJenkins
+administrator password -- where ever jenkins is installed we will see one folder secret folder which contains jenkins first time initial passowrd
+for first time usage and copy that password in jenkins http://localhost:8080 (administraots password)
+click next
+install suggested plugins select default plugins for eclipse(install  default plugins)
+Create first admin user
+username:admin
+password:admin
+Instance configuration 
+launch jenkins
+jenkins is ready
+welcome to jenkins 
+give user name and passowrd 
+dashboard will appear
+Welocme to jenkins please create your own Jobs
+ we can execute project in two different ways
+	--> Execute project using free style project(run.bat)file
+	--> Execute project using Maven(POM.xml)
+########################################################################################
+firs create new Item           //(NewItem --> item name(project name) --> freestyle peoject --> build-->)
+--> click on new item.(project name inetbankiingV1_Freestyle)
+	freestyle and maven project we can use.
+	create a projct name  with inetbankingV1_Freestyle  click on free style project then click on 'OK'.
+it will create a new project within eclipse we need to have configuration page discription of our project is given in discription
+
+Build (Build section)
+Addbuildstep
+select execute windows batch command.(if you are working on linux we should select .sh file)(.bat for windows)   
+one prompt will open we have to specify the project location
+cd C:/Users/Singaram.ram/Documents/Workspace/HybrdiFrameWork
+run.bat
+click on appply and save
+project dashboard will be created
+ 
+ExtraInfo:
+For free style project no need to set environemnt varaible but for maven environment varaibles should be set.
+//////////////////////////////////////////////////Execute Project using POM.xml/////////////////////////////////////////////
+install maven plugins in jenkins in jenkins home page click on manage jenkins  navigate to maven jenkin select manage plugins
+go to Availabe section 
+select all maven related plugins (select all maven plugins with maven as keyword)
+install wihout restart
+Go to Global tool configuration in manage plugins and set jdk path(click on jdk installation)
+Imp step (configure JAVA-HOME -- manage jenkins --> Global configuration --> jdk --> jdk installation --> JAVA_HOME path)
+
+ //////Creating maven projetc/////////////
+click new time provide project name select maven project  then click on 'OK'  provide discription
+Build Section by default it will provide POM.xml
+provide ROOT pom --> complete path where pom.xml is present .pom.xm(C://Users//Singaram.ram//Documents//Workspace//Hybridframework//pom.xml)
+Goals and Options -- clean install
+
+Post build actions -- Emails Options(Editible email notification) (specify all requied details) (it will tirgger emails)
+
+#####################################################WorkingWithGit/GITHUB########################################################################################
+Github is remote repository
+git is local system repository
+
+1.install git in local system
+##################
+create remote repository 
+open google and create account in github
+//////
+push data into github through command prompt
+Before commiting code create local repository
+Goto project folder open command prompt and right click and select gitbash here
+FirstStep - create git repository
+		git init   -->create an empty git repository (local repository) (creats a local reposirty )
+we need to associate local reposiroty to remote repository (we need to connect to remote repository first and then commit and push code)
+how to assocaite local to remote   -- command --> git remote add origin "https://github.com/sairam"  ("we have to provide our git remote path ")(this should be done first time)
+
+
+copy your local path and click enter
+workspace to stagging -- staging to gitrepository
+add command 
+commit repository 
+status command for checking status of files 
+
+#############################
+git status  (it will gives all folders and fies present in local repository) (it iwll give all tracked and untracked file status)(what all are files ready to comit in git repository)
+next step we send files to staging and from there git repository
+
+git add -A  (it will add to staging area) 
+after adding again check status
+
+after adding files to stagging local repositry add files to remote repository 
+ 
+before sending from staiging to git repository first time execute two commands
+git config --global user.name "sairamsingaram"
+git config --global user.email ""sai.singaram222@gmail.com
+
+use
+
+git commit   -m     "commit comments for reference"
+
+push files to github
+commit all the files into git repository  (remote repository)
+git push -u origin master  (it will ask username and password) (it will push all files into remote repository)(git ----> github repository)
+#############################################################################
+pull latest code into my workspace local 
+
+git pull origin master   (it will pull al the files to local repoitory)
+ If you updated single file and want to update file to remote system then command is git add filename
+git commit -m "filename.txt" is  modified
+
+git push -u orign master
+
+#################################################################################################
+How to configure code from github to jenkins and run the build
+
+Open jenkins provide user name and psssword
+create new project 
+create new item
+inetBankingV1.github
+maven preoject 
+'Ok'
+In source code management --> select git -->  provide repository url
+mvn clean install
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,138 @@
+Reference Data 
+
+Destination:
+9,'I');
+11,'A');   
+16,'A');
+17,'A');
+18,'A');
+20,'A');
+21,'A');
+22,'A');
+24,'A');
+25,'A');
+26,'A');
+27,'A');
+28,'A');
+29,'A');
+31,'A');
+34,'A');
+------------------------------------------------------------------------
+State list -- ZD-Iseries
+
+{
+      "stateName": "AB",
+      "code": 124
+    },
+    {
+      "stateName": "AL",
+      "code": 840
+    },
+    {
+      "stateName": "BC",
+      "code": 124
+    },
+    {
+      "stateName": "CT",
+      "code": 840
+    },
+    {
+      "stateName": "FL",
+      "code": 840
+    },
+    {
+      "stateName": "GA",
+      "code": 840
+    },
+    {
+      "stateName": "ME",
+      "code": 840
+    },
+    {
+      "stateName": "MI",
+      "code": 840
+    },
+    {
+      "stateName": "MT",
+      "code": 840
+    },
+    {
+      "stateName": "NC",
+      "code": 840
+    },
+    {
+      "stateName": "NY",
+      "code": 840
+    },
+    {
+      "stateName": "OH",
+      "code": 840
+    },
+    {
+      "stateName": "ON",
+      "code": 124
+    },
+    {
+      "stateName": "PA",
+      "code": 840
+    },
+    {
+      "stateName": "QC",
+      "code": 124
+    },
+    {
+      "stateName": "SC",
+      "code": 840
+    },
+    {
+      "stateName": "VA",
+      "code": 840
+    },
+    {
+      "stateName": "WA",
+      "code": 840
+    },
+    {
+      "stateName": "WV",
+      "code": 840
+    }
+-------------------------------------------------------------------
+Netwrok
+
+FHD
+FXF
+FXG
+FXH
+FXI
+FXJ
+FXK
+FXL
+FXM
+FXN
+FXO
+FXP
+FXSP
+----------------------------------------------------------------------
+TimeZone
+(GMT-8:00) Canada/Pacific
+(GMT-8:00) Canada/Yukon
+(GMT-7:00) Canada/Mountain
+(GMT-6:00) Canada/Central
+(GMT-6:00) Canada/East-Saskatchewan
+(GMT-6:00) Canada/Saskatchewan
+(GMT-5:00) Canada/Eastern
+(GMT-4:00) Canada/Atlantic
+(GMT-3:30) Canada/Newfoundland
+(GMT-11:00) US/Samoa
+(GMT-10:00) US/Aleutian
+(GMT-10:00) US/Hawaii
+(GMT-9:00) US/Alaska
+(GMT-8:00) US/Pacific
+(GMT-8:00) US/Pacific-New
+(GMT-7:00) US/Arizona
+(GMT-7:00) US/Mountain
+(GMT-6:00) US/Central
+(GMT-6:00) US/Indiana-Starke
+(GMT-5:00) US/East-Indiana
+(GMT-5:00) US/Eastern
+(GMT-5:00) US/Michigan
